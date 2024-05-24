@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# EnglishHackaton 2024 - Arroyo Consulting
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Desarrollo de una plataforma Web auto-asistida que determine el nivel linguistico de un candidato en el idioma INGLÉS bajo el estandar internacional MCERL, considerando sus habilidades de escucha, habla y comprensión lectora a través de pruebas online generadas automáticamente por Inteligencia artificial.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Prueba 1: Escritura
 
-### `npm start`
+- El sistema selecciona aleatoriamente los temas a tratar con el candidato.
+- Segun el tema, el candidato debe escribir una composición escrita donde demuestre sus habilidades en grámatica y redacción de todos los tiempos gramaticales (pasado, presente y futuro).
+- El sistema debe limitar el tiempo en cada prueba escrita y la cantidad de caractéres.
+- El sistema debe limitar el Copiar - Pegar.
+- El sistema debe bloquear el uso de complementos o correctores instaldos en el navegador (ejemplo gramarly).
+- La cantidad de composiciones a desarrollar por el candidato debe ser configurada por el administrador del sistema.
+- Al finalizar la prueba, el sistema revisa automáticamente los textos y retroalimenta al candidato.
+- Los temas a tratar con el candidato deben ser configurables por el administrador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prueba 2: Escucha
 
-### `npm test`
+- El sistema selecciona aleatoriamente los temas a tratar con el candidato.
+- Segun el tema, el sistema genera un audio donde presente una conversación en inglés entre dos personas.
+- Una vez ejecutado el audio, el candidato pasa a responder una serie de preguntas acerca del mismo en formato de multiples respuestas, selección única. Estas preguntas son generadas automáticamente por el sistema.
+- El sistema debe limitar la cantidad de veces que se puede escuchar el audio (max. 2 veces).
+- El sistema debe limitar el tiempo en cada prueba.
+- La cantidad de audios formulados es configurada por el administrador del sistema.
+- Al finalizar la prueba, el sistema revisa automáticamente las respuestas y retroalimenta al candidato.
+- Los temas a tratar con el candidato deben ser configurables por el administrador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prueba 3: Conversación
 
-### `npm run eject`
+- El formato de la prueba es tipo pregunta - respuesta.
+- El sistema genera audios automáticamente preguntando sobre un tema especifico.
+- El sistema habilita la captura de audios para grabar la respuesta desde el micrófono del candidato.
+- El sistema limita el tiempo de captura de cada respuesta a máx 30 seg.
+- La cantidad de preguntas a formular es configurada por el administrador del sistema.
+- Al finalizar la prueba, el sistema revisa automáticamente las respuestas y retroalimenta al candidato.
+- Los temas a tratar con el candidato deben ser configurables por el administrador.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Prueba 4: Resultados
+- Determinar el nivel de inglés según los criterios de la compañía donde se definirá los porcentajes (pesos) para cada prueba.
+- Los resultados se deben evaluar frente al marco común europeo, cuyos valores ya determinan la escala.
+- Presentar un resumen de las tres pruebas anteriores.
+- Se tiene una política de reintento de máximo 2 veces.
+- Historial de pruebas realizadas.
+- Exportar Resultados a PDF.
