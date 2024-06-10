@@ -24,6 +24,10 @@ function Home() {
               </select>
             </div>
             <div className="mb-3">
+              <label htmlFor="document" className="form-label">Documento de identidad</label>
+              <input type="document" className="form-control" id="document" />
+            </div>
+            <div className="mb-3">
               <label htmlFor="email" className="form-label">Correo electrónico</label>
               <input type="email" className="form-control" id="email" />
             </div>

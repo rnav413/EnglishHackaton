@@ -1,0 +1,28 @@
+
+
+.border {
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .mb-2 {
+    margin-bottom: 1rem;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .me-2 {
+    margin-right: 0.5rem;
+  }
+  
+  .mt-auto {
+    margin-top: auto;
+  }
+  
+  .vh-100 {
+    min-height: 100vh;
+  }
+  
